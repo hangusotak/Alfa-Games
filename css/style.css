@@ -30,7 +30,7 @@ header{
 .search input::placeholder{color:var(--muted)}
 
 /* Kategori */
-.cats{display:flex;gap:10px;overflow-x:auto;padding:16px 14px 4px;scrollbar-width:none;scroll-snap-type:x proximity}
+.cats{display:flex;gap:10px;overflow-x:auto;padding:16px 14px 4px;scroll-padding-inline:14px;scrollbar-width:none;scroll-snap-type:x proximity}
 .cats::-webkit-scrollbar{display:none}
 .cat{
   flex:0 0 auto;scroll-snap-align:start;min-width:132px;height:74px;border-radius:var(--r);
@@ -101,7 +101,7 @@ nav button[aria-current=true]{color:#fff;font-weight:700}
   body{padding-bottom:30px}
   nav{display:none}
   .grid{grid-template-columns:repeat(auto-fill,minmax(170px,1fr))}
-  .cats{padding-left:max(14px,calc((100vw - 1100px)/2 + 14px))}
+  .cats{padding-left:max(14px,calc((100vw - 1100px)/2 + 14px));scroll-padding-left:max(14px,calc((100vw - 1100px)/2 + 14px))}
 }
 @media(prefers-reduced-motion:reduce){*{transition:none!important}}
 
