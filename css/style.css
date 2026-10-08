@@ -21,10 +21,7 @@ header{
 }
 .bar{display:flex;align-items:center;gap:12px;height:58px}
 .logo{display:flex;align-items:center;gap:8px;font-weight:800;font-size:19px;letter-spacing:-.3px}
-.logo i{
-  display:grid;place-items:center;width:34px;height:34px;border-radius:10px;font-style:normal;font-size:18px;
-  background:linear-gradient(135deg,var(--accent),#c13cf0);
-}
+.logo img{display:block;border-radius:10px}
 .search{flex:1;max-width:420px;margin-left:auto}
 .search input{
   width:100%;height:40px;border-radius:20px;border:1px solid var(--line);
@@ -107,3 +104,8 @@ nav button[aria-current=true]{color:#fff;font-weight:700}
   .cats{padding-left:max(14px,calc((100vw - 1100px)/2 + 14px))}
 }
 @media(prefers-reduced-motion:reduce){*{transition:none!important}}
+
+/* Teks pengantar (penting untuk SEO) */
+.intro{padding-top:16px}
+.intro h1{font-size:clamp(20px,5vw,30px);font-weight:800;line-height:1.2}
+.intro p{color:var(--muted);margin-top:6px;max-width:60ch}
