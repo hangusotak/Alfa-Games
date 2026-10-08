@@ -12,9 +12,9 @@
    - Tanpa img/e/g   -> emoji dan warna dibuat otomatis.
    ===================================================================== */
 const GAMES = [
-  { t: 'Air Force',    u: 'games/air-force/index.html', c: 'Aksi',   top: true },
-  { t: 'Contoh Puzzle', u: 'https://contoh.com/puzzle',  c: 'Puzzle' },
-  { t: 'Contoh Balap',  u: '',                           c: 'Balap' },
+  { t: 'Air Force',    u: 'https://hangusotak.github.io/Air-Force/', c: 'Aksi',   top: true },
+  { t: 'Car Racing', u: 'https://mzalfa08.github.io/Car-Racing/',  c: 'Balap' },
+  { t: 'Block Blast',  u: 'https://mzalfa08.github.io/Block-Blast/', c: 'Puzzle' },
   { t: 'Contoh Arcade', u: '',                           c: 'Arcade', img: '' },
   // { t: 'Judul Game', u: 'https://link-game', c: 'Arcade', img: 'img/judul.jpg' },
 ];
