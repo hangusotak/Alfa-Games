@@ -13,6 +13,7 @@ function style(x) {
   };
 }
 const css = g => `--c1:${g[0]};--c2:${g[1]}`;
+const key = x => x.u || x.t;   // penanda favorit: link game (judul kembar tidak bentrok)
 const isExt = u => /^https?:\/\//i.test(u);
 const linkAttrs = u => u ? `href="${esc(u)}"${isExt(u) ? ' target="_blank" rel="noopener noreferrer"' : ''}` : 'href="#"';
 const thumb = (x, e) => x.img ? `<img src="${esc(x.img)}" alt="" loading="lazy">` : `<div class="big">${e}</div>`;
@@ -30,15 +31,22 @@ function renderCats() {
   }).join('');
 }
 
+function heroCard(x) {
+  const s = style(x), bg = x.banner || x.img;
+  const pic = bg ? `<img src="${esc(bg)}" alt="" loading="lazy">` : `<div class="big">${s.e}</div>`;
+  const ic = x.icon ? `<img src="${esc(x.icon)}" alt="">` : s.e;
+  return `<a class="hero" style="${css(s.g)}" ${linkAttrs(x.u)} aria-label="Main ${esc(x.t)}">${pic}
+    <div class="meta"><div class="ico" style="${css(s.g)}">${ic}</div>
+    <div><b>${esc(x.t)}</b><small>${esc(x.c || '')}</small></div><span class="play">Main</span></div></a>`;
+}
+
+// Semua game bertanda top:true tampil di banner; kalau tidak ada, pakai game pertama yang punya link
 function renderHero() {
-  const x = GAMES.find(g => g.top && g.u) || GAMES.find(g => g.u) || GAMES[0];
-  if (!x) { $('topSec').hidden = true; return; }
-  const s = style(x), h = $('hero');
-  h.setAttribute('style', css(s.g));
-  h.setAttribute('href', x.u || '#');
-  if (isExt(x.u)) { h.target = '_blank'; h.rel = 'noopener noreferrer'; }
-  h.innerHTML = `${thumb(x, s.e)}<div class="meta"><div class="ico" style="${css(s.g)}">${s.e}</div>
-    <div><b>${esc(x.t)}</b><small>${esc(x.c || '')}</small></div><span class="play">Main</span></div>`;
+  let tops = GAMES.filter(g => g.top && g.u);
+  if (!tops.length) tops = GAMES.filter(g => g.u).slice(0, 1);
+  if (!tops.length) { $('topSec').hidden = true; return; }
+  $('heroes').className = 'heroes' + (tops.length === 1 ? ' one' : '');
+  $('heroes').innerHTML = tops.map(heroCard).join('');
 }
 
 function renderGrid() {
@@ -46,12 +54,12 @@ function renderGrid() {
   const list = GAMES.filter(x =>
     (cat === 'Semua' || x.c === cat) &&
     (!q || x.t.toLowerCase().includes(q)) &&
-    (!onlyFav || favs.includes(x.t)));
+    (!onlyFav || favs.includes(key(x))));
   $('grid').innerHTML = list.map(x => {
     const s = style(x);
     return `<a class="card${x.u ? '' : ' soon'}" style="${css(s.g)}" ${linkAttrs(x.u)} aria-label="Main ${esc(x.t)}">
       ${thumb(x, s.e)}<span class="tag">${x.u ? esc(x.c || '') : 'Segera'}</span>
-      <button class="fav" data-f="${esc(x.t)}" aria-pressed="${favs.includes(x.t)}" aria-label="Simpan ${esc(x.t)}">♥</button>
+      <button class="fav" data-f="${esc(key(x))}" aria-pressed="${favs.includes(key(x))}" aria-label="Simpan ${esc(x.t)}">♥</button>
       <div class="name">${esc(x.t)}</div></a>`;
   }).join('');
   $('empty').hidden = list.length > 0;
