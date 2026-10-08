@@ -16,7 +16,7 @@ const GAMES = [
   { t: 'Car Racing',   u: 'https://mzalfa08.github.io/Car-Racing/',  c: 'Balap', top: true },
   { t: 'Block Blast',   u: 'https://mzalfa08.github.io/Block-Blast/', c: 'Puzzle' },
   { t: 'Calculator',   u: 'https://mzalfa08.github.io/Block-Blast/', c: 'Puzzle' },
-  { t: 'Calculator',   u: '',   c: 'Tools' },
+  { t: 'Calculator',   u: 'https://hangusotak.github.io/kalkulator-sederhana/',   c: 'Tools' },
   { t: 'Motor Trail',   u: '',   c: 'Aksi' },
   { t: 'Contoh Arcade',   u: '',   c: 'Arcade', img: '' },
   // { t: 'Judul Game', u: 'https://link-game', c: 'Arcade', img: 'img/judul.jpg' },
