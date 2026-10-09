@@ -14,7 +14,7 @@
 const GAMES = [
   { t: 'Air Force',   u: 'https://hangusotak.github.io/Air-Force/', c: 'Aksi',   top: true },
   { t: 'Car Racing',   u: 'https://mzalfa08.github.io/Car-Racing/',  c: 'Balap', top: true },
-  { t: 'Block Blast',   u: 'https://mzalfa08.github.io/Block-Blast/', c: 'Puzzle' },
+  { t: 'Block Blast',   u: 'https://mzalfa08.github.io/Block-Blast/', c: 'Puzzle', top: true },
   { t: 'Calculator',   u: 'https://hangusotak.github.io/kalkulator-sederhana/',   c: 'Tools' },
   { t: 'Motor Trail',   u: '',   c: 'Aksi' },
   { t: 'Contoh Arcade',   u: '',   c: 'Arcade', img: '' },
