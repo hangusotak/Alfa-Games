@@ -10,6 +10,7 @@
    - u dikosongkan  -> kartu tampil redup berlabel "Segera".
    - c kategori baru -> tombol kategorinya muncul otomatis.
    - Tanpa img/e/g   -> emoji dan warna dibuat otomatis.
+   - Opsional: img (gambar kartu), banner (gambar banner), icon (ikon kecil di banner), e (emoji), g (2 warna latar), top:true (tampil di banner)
    ===================================================================== */
 const GAMES = [
   { t: 'Air Force',   u: 'https://hangusotak.github.io/Air-Force/', c: 'Aksi',   top: true },
