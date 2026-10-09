@@ -16,6 +16,11 @@
    thumb/air-force.png          (512×512)
    thumb/air-force-banner.png   (1280×800)
    thumb/air-force-icon.png     (128×128)
+
+   =======================
+   Kartu grid (img)	512 × 512 px	100 KB (idealnya 50 sampai 80 KB)
+   Banner (banner)	1280 × 800 px	200 KB (idealnya 120 sampai 180 KB)
+   Ikon (icon)	128 × 128 px	20 KB
    ===================================================================== */
 const GAMES = [
   { t: 'Air Force',   u: 'https://hangusotak.github.io/Air-Force/', c: 'Aksi',   top: true },
