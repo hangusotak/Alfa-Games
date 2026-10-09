@@ -26,7 +26,7 @@ const GAMES = [
   { t: 'Air Force',   u: 'https://hangusotak.github.io/Air-Force/', c: 'Aksi',   top: true,
     img: 'thumb/air-force.webp', banner: 'thumb/air-force-banner.webp', icon: 'thumb/air-force-icon.webp' },
   { t: 'Car Racing',  u: 'https://mzalfa08.github.io/Car-Racing/',  c: 'Balap',  top: true,
-    img: 'thumb/car-racing.webp', banner: 'thumb/car-racing-banner.webp', icon: 'thumb/car-racing-icon.webp' },
+    img: 'thumb/car-racing.webp', banner: 'thumb/car-racing-banner.webp', icon: 'thumb/car-racing-icon.png' },
   { t: 'Block Blast', u: 'https://mzalfa08.github.io/Block-Blast/', c: 'Puzzle', top: true,
     img: 'thumb/block-blast.webp', banner: 'thumb/block-blast-banner.jpg', icon: 'thumb/block-blast-icon.webp' },
   { t: 'Calculator',  u: 'https://hangusotak.github.io/kalkulator-sederhana/', c: 'Tools',
