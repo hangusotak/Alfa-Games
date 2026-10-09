@@ -23,10 +23,14 @@
    Ikon (icon)	128 × 128 px	20 KB
    ===================================================================== */
 const GAMES = [
-  { t: 'Air Force',   u: 'https://hangusotak.github.io/Air-Force/', c: 'Aksi',   top: true },
-  { t: 'Car Racing',   u: 'https://mzalfa08.github.io/Car-Racing/',  c: 'Balap', top: true },
-  { t: 'Block Blast',   u: 'https://mzalfa08.github.io/Block-Blast/', c: 'Puzzle', top: true },
-  { t: 'Calculator',   u: 'https://hangusotak.github.io/kalkulator-sederhana/',   c: 'Tools' },
+  { t: 'Air Force',   u: 'https://hangusotak.github.io/Air-Force/', c: 'Aksi',   top: true,
+    img: 'thumb/air-force.webp', banner: 'thumb/air-force-banner.webp', icon: 'thumb/air-force-icon.webp' },
+  { t: 'Car Racing',  u: 'https://mzalfa08.github.io/Car-Racing/',  c: 'Balap',  top: true,
+    img: 'thumb/car-racing.webp', banner: 'thumb/car-racing-banner.webp', icon: 'thumb/car-racing-icon.webp' },
+  { t: 'Block Blast', u: 'https://mzalfa08.github.io/Block-Blast/', c: 'Puzzle', top: true,
+    img: 'thumb/block-blast.webp', banner: 'thumb/block-blast-banner.webp', icon: 'thumb/block-blast-icon.webp' },
+  { t: 'Calculator',  u: 'https://hangusotak.github.io/kalkulator-sederhana/', c: 'Tools',
+    img: 'thumb/calculator.webp' },
   { t: 'Motor Trail',   u: '',   c: 'Aksi' },
   { t: 'Contoh Arcade',   u: '',   c: 'Arcade', img: '' },
   // { t: 'Judul Game', u: 'https://link-game', c: 'Arcade', img: 'img/judul.jpg' },
