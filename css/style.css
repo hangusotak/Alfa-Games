@@ -49,7 +49,7 @@ h2{font-size:19px;font-weight:800;margin:24px 0 12px}
   background:linear-gradient(160deg,var(--c1),var(--c2));
 }
 .hero .big{position:absolute;inset:0;display:grid;place-items:center;font-size:clamp(90px,26vw,190px);opacity:.9}
-.hero img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.hero > img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
 .hero .meta{
   position:absolute;left:0;right:0;bottom:0;display:flex;align-items:center;gap:12px;
   padding:34px 14px 14px;background:linear-gradient(transparent,rgba(5,3,20,.88));
@@ -70,7 +70,7 @@ h2{font-size:19px;font-weight:800;margin:24px 0 12px}
 }
 .card:hover{transform:translateY(-3px)}
 .card .big{position:absolute;inset:0 0 28% 0;display:grid;place-items:center;font-size:clamp(54px,14vw,76px)}
-.card img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.card > img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
 .card .name{
   position:absolute;left:0;right:0;bottom:0;padding:26px 10px 9px;font-weight:700;font-size:14px;
   background:linear-gradient(transparent,rgba(5,3,20,.9));
