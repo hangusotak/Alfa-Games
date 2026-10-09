@@ -11,6 +11,11 @@
    - c kategori baru -> tombol kategorinya muncul otomatis.
    - Tanpa img/e/g   -> emoji dan warna dibuat otomatis.
    - Opsional: img (gambar kartu), banner (gambar banner), icon (ikon kecil di banner), e (emoji), g (2 warna latar), top:true (tampil di banner)
+
+   =======================
+   thumb/air-force.png          (512×512)
+   thumb/air-force-banner.png   (1280×800)
+   thumb/air-force-icon.png     (128×128)
    ===================================================================== */
 const GAMES = [
   { t: 'Air Force',   u: 'https://hangusotak.github.io/Air-Force/', c: 'Aksi',   top: true },
