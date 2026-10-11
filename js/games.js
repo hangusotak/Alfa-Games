@@ -32,7 +32,7 @@ const GAMES = [
   { t: 'Calculator',  u: 'https://hangusotak.github.io/kalkulator-sederhana/', c: 'Tools',
     img: 'thumb/calculator.webp' },
   { t: 'Moto Beach X',   u: 'https://mzalfa08.github.io/motor-trail/',   c: 'Aksi', img: 'thumb/moto-beach.jpg', 
-   icon: 'thumb/moto-beach-icon.png' },
+   icon: 'thumb/moto-beach-icon.png', top: true },
   { t: 'Contoh Arcade',   u: '',   c: 'Arcade', img: '' },
   // { t: 'Judul Game', u: 'https://link-game', c: 'Arcade', img: 'img/judul.jpg' },
 ];
