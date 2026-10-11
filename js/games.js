@@ -31,7 +31,8 @@ const GAMES = [
     img: 'thumb/block-blast.webp', banner: 'thumb/block-blast-banner.jpg', icon: 'thumb/block-blast-icon.webp' },
   { t: 'Calculator',  u: 'https://hangusotak.github.io/kalkulator-sederhana/', c: 'Tools',
     img: 'thumb/calculator.webp' },
-  { t: 'Motor Trail',   u: '',   c: 'Aksi' },
+  { t: 'Moto Beach X',   u: 'https://mzalfa08.github.io/motor-trail/',   c: 'Aksi', img: 'thumb/moto-beach.jpg', 
+   icon: 'thumb/moto-beach-icon.png' },
   { t: 'Contoh Arcade',   u: '',   c: 'Arcade', img: '' },
   // { t: 'Judul Game', u: 'https://link-game', c: 'Arcade', img: 'img/judul.jpg' },
 ];
